@@ -1,0 +1,18 @@
+{{#mdl-card classNames="mdl-shadow--2dp" as |card|}}
+  {{card.title title="blah"}}
+  {{#card.supportingText}}
+    This is some text yo
+  {{/card.supportingText}}
+
+  {{#card.actions classNames="mdl-card--border"}}
+    {{#mdl-button tagName="a" classNames="mdl-button--colored"}}
+      Get Started
+    {{/mdl-button}}
+  {{/card.actions}}
+
+  {{#card.menu}}
+    {{#mdl-button isIcon=true}}
+      {{mdl-icon type="share"}}
+    {{/mdl-button}}
+  {{/card.menu}}
+{{/mdl-card}}

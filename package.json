@@ -1,12 +1,12 @@
 {
   "name": "ember-material",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "1.0.0",
+  "description": "Basic material design components",
   "keywords": [
     "ember-addon"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "Brandon Drake",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -15,10 +15,16 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember try:each"
+    "serve": "ember s --live-reload=false",
+    "reset": "yarn unlink && rm -rf node_modules bower_components dist tmp yarn.lock",
+    "prep": "yarn install && yarn link",
+    "test": "ember test",
+    "test:all": "ember try:each"
   },
   "dependencies": {
-    "ember-cli-babel": "^6.3.0"
+    "ember-cli-babel": "^6.3.0",
+    "ember-cli-sass": "^7.0.0",
+    "ember-cli-htmlbars": "^2.0.1"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
@@ -26,7 +32,6 @@
     "ember-cli": "~2.14.2",
     "ember-cli-dependency-checker": "^1.3.0",
     "ember-cli-eslint": "^3.0.0",
-    "ember-cli-htmlbars": "^2.0.1",
     "ember-cli-htmlbars-inline-precompile": "^0.4.3",
     "ember-cli-inject-live-reload": "^1.4.1",
     "ember-cli-qunit": "^4.0.0",
