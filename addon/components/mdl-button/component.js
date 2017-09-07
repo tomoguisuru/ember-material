@@ -10,11 +10,15 @@ const MDLButtonComponent = Component.extend({
   classNames: ['mdl-button'],
   classNameBindings: [
     'isIcon:mdl-button--icon',
+    'isFab:mdl-button--fab',
+    'isColored:mdl-button--colored',
     'useRipple:mdl-js-button',
     'useRipple:mdl-js-ripple-effect',
   ],
 
   isIcon:    false,
+  isFab:     false,
+  isColored: false,
   useRipple: true,
 
   onClick: () => assert('<component:mdl-button>: A closure action `onClick` was not provided'),
