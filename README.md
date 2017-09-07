@@ -33,12 +33,6 @@ Copy the following into the `head` tag of your applications index, *app/index.ht
 <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 ```
 
-In *app/styles/app.scss* copy the following
-
-```sass
-@import "ember-material";
-```
-
 ## Development as Addon
 
 * From dependant project, `yarn link ember-material`
