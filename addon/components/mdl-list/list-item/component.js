@@ -10,7 +10,9 @@ const MDLListItemComponent = Component.extend({
   tagName: 'li',
 
   classNames: ['mdl-list__item'],
-  classNameBindings: ['cssLines'],
+  classNameBindings: ['cssLines', 'isActive:is-active'],
+
+  isActive: false,
 
   lines: 1,
 
